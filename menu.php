@@ -98,7 +98,7 @@
                                 date_default_timezone_set("America/Phoenix");
                                 $setTime = "SET time_zone=\"-07:00\"";
                                 $timeResult = mysqli_query($db, $setTime);
-                                $query = "INSERT INTO reservations VALUES (null, '$user_id', '$loc', '$time', null, null)";
+                                $query = "INSERT INTO reservations VALUES (null, '$user_id', '$loc', '$time', 0, null)";
                                 $result = mysqli_query($db, $query);
                             }
                         }
